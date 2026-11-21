@@ -1,0 +1,4 @@
+# Store text with LF in the repository. Windows scripts must check out with CRLF.
+* text=auto eol=lf
+*.cmd text eol=crlf
+*.vbs text eol=crlf

@@ -1,0 +1,16 @@
+{
+  "name": "pdf-editor",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local PDF form filling, text, checkmarks and signatures, built as a thin layer on pdf.js",
+  "scripts": {
+    "setup": "node tools/setup.js",
+    "icon": "node tools/make-icon.js",
+    "start": "node launch.js",
+    "serve": "node server.js",
+    "test": "node tools/smoke-test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
