@@ -4,8 +4,12 @@ A small local app for the everyday PDF jobs: open a file, fill in a form, tick
 boxes, add text, sign, and save back to the same file. It runs entirely on your
 own machine. Nothing is uploaded anywhere.
 
-I built it so I could stop paying for a PDF subscription that I only used to
-fill in and sign forms.
+I made it with Claude Code so I could stop paying for a PDF subscription that
+I only used to fill in and sign forms.
+
+![The editor with a sample form filled in, ticked and signed](docs/screenshot.png)
+
+*Sample form with made-up data.*
 
 ## What it does
 
@@ -133,19 +137,17 @@ environment variable to use something other than 4830.
 
 ## How AI was used
 
-I built this with Claude Code, Anthropic's coding agent. Claude wrote almost
-all of the code in this repository, chose pdf.js as the base after I asked
-whether an open-source editor could be reused, and ran the tests. Claude also
-prepared this repository for publishing and wrote this README. A review by
-separate Claude sessions that had not seen the original project found the gaps that led to the request checks and path rules described above.
+I designed and directed this project and used Claude Code, Anthropic's AI
+coding agent, to write the code and this README. I defined the features, used
+the app on real forms, and reported each problem I hit. The Checkmark tool, the
+Save as button, the retrying save and the Windows launcher all came from that
+testing.
 
-What I did: I set the goal and the feature list, used the app on my own forms,
-and reported what was wrong. The Checkmark tool, the visible Save as button,
-the retrying save and the compiled launcher all exist because I hit a real
-problem and asked for a fix. I made the product decisions, including the
-decision to publish.
+Before publishing, I had separate AI reviewers that had not seen the original
+project audit the code. They found security gaps that were then fixed and
+covered by the tests described above.
 
 ## License
 
-No license has been chosen for this code yet. pdf.js is Apache-2.0 and is
-downloaded by the setup script, not redistributed here.
+MIT, see [LICENSE](LICENSE). pdf.js is Apache-2.0 and is downloaded by the
+setup script, not redistributed here.
